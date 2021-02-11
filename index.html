@@ -3,6 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/bootstrap.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,43 +23,33 @@
     </style>
     <script>
       // Initialize and add the map
-      function initMap() {
-        
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
     </script>
   </head>
-  <body>
-    <div>
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-          <ul class="navbar-nav">
-              <li class="nav-item active">
-                  <a class="nav-link" href="#">Find Me Food</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Cart</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Log In</a>
-              </li>
-          </ul>
-      </nav>
-  </div>
+  <div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Find Me Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+  <body style="background-color:#0471dffb;">
+    
   <img src="./images/logo.gif" class="logo" alt="logo" width="">
+  
     <!--The div element for the map -->
     <div id="map">
       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH1mXIfTIZJQC52bncFT3_1BDHSPDJq7s&callback=initMap&libraries=&v=weekly"
-        async
-      ></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKgitQUXdH_y5mbp1cPaHQnjmDDZ1Ls8E&callback=initMap&libraries=&v=weekly"
+        async></script>
+        <script type="text/javascript" src="./script.js"></script>
     </div>
   </body>
 </html>

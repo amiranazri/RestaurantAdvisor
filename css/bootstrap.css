@@ -50,8 +50,8 @@
 }
 
 .logo {
-  height: 20px;
-  width: 20px;
+  margin: auto;
+  display: block;
 }
 
 body {
@@ -7234,7 +7234,7 @@ textarea.form-control-lg {
 }
 
 .bg-body {
-  background-color: #fff !important;
+  background-color: #0B77E3 !important;
 }
 
 .bg-white {
