@@ -3,15 +3,15 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/style.css">
+      <link rel="stylesheet" href="style.css">
 
     
-      <title>Suggestions For You</title>
+      <title>Restaurant Advisor For You</title>
 
     <style type="text/css">
       #map {
         height: 400px;
-        width: 100%;
+        width: 100%; 
       }
     </style>
   </head>
@@ -23,24 +23,21 @@
                 <a class="nav-link" href="#">Find Me Food</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Cart</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Log In</a>
+                <a class="nav-link" href="control_panel.php">Control Panel</a>
             </li>
         </ul>
     </nav>
 </div>
-  <body style="background-color:#E64C86;">
-    
-  <img src="./images/logo.gif" class="logo" alt="logo" width="">
+
+  <body style="background-color:#E64C86;" onload="myFunction()">
+  <img src="./images/logo.gif" class="logo" alt="logo">
   
     <!--The div element for the map -->
     <div id="map">
       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKgitQUXdH_y5mbp1cPaHQnjmDDZ1Ls8E&callback=initMap&libraries=&v=weekly"
         async></script>
-        <script type="text/javascript" src="./script.js"></script>
+        <script type="text/javascript" src="./init_map.js"></script>
     </div>
   </body>
 </html>
