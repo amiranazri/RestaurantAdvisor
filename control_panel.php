@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html>
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
+      <link href="css/style.css" rel="stylesheet" media="all">
 
     
       <title>Restaurant Advisor</title>
@@ -13,7 +14,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href=index.html>Find Me Food</a>
+                <a class="nav-link" href=index.php>Find Me Food</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Control Panel</a>
@@ -24,6 +25,7 @@
 
   <body style="background-color:#E64C86;">
   <img src="./images/logo.gif" class="logo" alt="logo">
+  <button type="button" class="btn btn-success" onclick="newEntry()">New Entry</button>
 
   <table class="table table-striped table-dark">
 <thead>
@@ -39,19 +41,21 @@
   <?php
 
 
-class TableRows extends RecursiveIteratorIterator {
+    class TableRows extends RecursiveIteratorIterator {
     function __construct($it) {
         parent::__construct($it, self::LEAVES_ONLY);
     }
+
     
     function current() {
         return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
     }
-    
+
     function beginChildren() {
         echo "<tr>";
     }
     
+
     function endChildren() {
         echo "</tr>" . "\n";
     }
@@ -77,9 +81,7 @@ try {
 catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
-function edit() {
-    echo "<script>alert('tuwdgisfgi')</script>";
-}
+
 $conn = null;
 echo "</table>";
 ?>
@@ -87,3 +89,14 @@ echo "</table>";
 
 </body>
 </html>
+<script>
+    function editEntry(id) {
+        window.location = "edit.php?id=" + id;
+    }
+    function deleteEntry(id) {
+        window.location = "delete.php?id=" + id;
+    }
+    function newEntry() {
+        window.location = "add_record.php?";
+    }
+</script>

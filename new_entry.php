@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet" media="all">
 
-    <title>Update Information</title>
+    <title>Add New Restaurant</title>
 </head>
 
 <body>
@@ -57,7 +57,7 @@
                             <div class="value">
                                 <div class="row row-space">
                                         <div class="input-group">
-                                            <input class="input--style-5" type="text" name="r_name" value="'.$r_name.'" required>
+                                            <input class="input--style-5" type="text" name="r_name" value="'.$r_name.'">
                                             <label class="label--desc">Restaurant Name</label>
                                         </div>
                                 </div>
@@ -67,7 +67,7 @@
                             <div class="name">Address</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="r_address" value="'.$r_address.'" required>
+                                    <input class="input--style-5" type="text" name="r_address" value="'.$r_address.'">
                                     <label class="label--desc">Restaurant Address</label>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                                 <div class="row row-refine">
                                     <div class="col-9">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="r_phone" value="'.$r_phone.'" required>
+                                            <input class="input--style-5" type="text" name="r_phone" value="'.$r_phone.'">
                                             <label class="label--desc">Phone Number</label>
                                         </div>
                                     </div>
