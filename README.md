@@ -3,6 +3,8 @@ Flow Communications Programmer Interview Task
 
 # Setting-Up
 
+* Install MySQL, if it isn't already on your computer.
+  ` npm install mysql`
 * Start up your MAMP server
 * Create and populate the 'restaurants' database by accessing the database.js file via your browser 
   ` localhost/RestaurantAdvisor/database.js `
