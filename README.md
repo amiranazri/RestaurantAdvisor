@@ -4,10 +4,10 @@ Flow Communications Programmer Interview Task
 # Setting-Up
 
 * Start up your MAMP server
-* Create and populate the 'restaurants' database by accessing the database.php file via your browser 
-  ` localhost/RestaurantAdvisor/database.php `
+* Create and populate the 'restaurants' database by accessing the database.js file via your browser 
+  ` localhost/RestaurantAdvisor/database.js `
 * Access the home page of the web application by referencing the index.html page via your browser 
-  ` localhost/RestaurantAdvisor/index.html `
+  ` localhost/RestaurantAdvisor/index.php `
 
 # User Journey Diagram
 
@@ -21,3 +21,13 @@ Flow Communications Programmer Interview Task
 * canva.com
 * colorlib.com
 * latlong.net
+* stackoverflow.com
+* php.net
+* creatifwerks.com
+* sqlservertutorial.net
+* study.com
+* a2hosting.co.za
+* mysqltutorial.org
+* sitepoint.com
+* phoenixnap.com
+* ostraining.com
